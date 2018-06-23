@@ -26,12 +26,20 @@
 @property (nonatomic) CGSize  size;        ///< Shortcut for frame.size.
 
 
-/**
- 视图弹出和回收的动画
 
- @param animateView 视图对象
+/**
+ 出厂动画
+
+ @param animateView 传入动画视图
  */
 +(void)animateIn:(UIView *)animateView;
+
+
+/**
+ 入场动画
+
+ @param animateView 传入动画视图
+ */
 +(void)animateOut:(UIView *)animateView;
 
 

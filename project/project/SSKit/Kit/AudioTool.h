@@ -21,7 +21,7 @@
 +(void)setAudioHit:(NSString *)source
       setFormatHit:(NSString *)format;
 
-//开场和结束的音乐
+//开场和结束的音效 滑动和数字翻倍的音效
 +(void)setAudioStOv:(NSString *)source
       setFormatStOv:(NSString *)format;
 

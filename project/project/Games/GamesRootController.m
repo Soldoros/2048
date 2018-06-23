@@ -273,6 +273,7 @@
     }
 }
 
+
 //移动所有块
 -(void)moveAllTiled:(int)index{
     _isMoveClearn = NO;
@@ -308,6 +309,7 @@
 }
 
 
+//计时器开始工作
 - (void)startTimer{
     if (!_timer){
         _timer = [NSTimer scheduledTimerWithTimeInterval:0.02
@@ -356,6 +358,7 @@
 }
 
 
+//向上滑动
 -(void)moveUp{
     for(int col=0;col<GAME_COLS;++col){
         int hit=0;
@@ -411,6 +414,7 @@
     }
 }
 
+//向下滑动
 -(void)moveDown
 {
     for(int col=0;col<GAME_COLS;++col)
@@ -472,6 +476,7 @@
     
 }
 
+//向左滑动
 -(void)moveLeft
 {
     for(int row=0;row<GAME_ROWS;++row)
@@ -529,6 +534,8 @@
         }
     }
 }
+
+//向右滑动
 -(void)moveRight
 {
     for(int row=0;row<GAME_ROWS;++row)
@@ -655,8 +662,6 @@
 }
 
 //游戏结束 跳转  280*340
-//phv.transform = CGAffineTransformMakeScale(0.0001, 0.0001);
-//_publishView.transform = CGAffineTransformIdentity;
 -(void)gotoGameOver
 {
     [_timer invalidate];

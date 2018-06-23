@@ -29,10 +29,14 @@ typedef NS_ENUM(NSInteger, DirectionType){
 
 @interface GamesRootController : UIViewController<GameOverViewDelegate>{
     
+    //游戏界面用二位数组控制，每个个字里面有个数字来代表滑块
     NSInteger map[GAME_ROWS][GAME_COLS];
     
+    //分数时间的背景
     UIView  *bringView[2];
+    //分数时间lab
     UILabel *bringLabel[2];
+    //分数时间显示的数字
     UILabel *numLabel[2];
 }
 
