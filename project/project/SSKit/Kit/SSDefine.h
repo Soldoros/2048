@@ -91,9 +91,20 @@ objectForKey:@"CFBundleVersion"];
 //当前窗口的高度 宽度
 #define SCREEN_Height [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_Width  [[UIScreen mainScreen] bounds].size.width
-//主视图的高度 宽度
-#define MAINVIEW_Height (SCREEN_Height - NAV_Height - TAB_Height)
-#define MAINVIEW_Width  [[UIScreen mainScreen] bounds].size.width
+//状态栏
+#define StatuBar_Height  [SSDeviceDefault shareCKDeviceDefault].statuBarHeight
+//导航栏
+#define NavBar_Height  [SSDeviceDefault shareCKDeviceDefault].navBarHeight
+//安全区域顶部
+#define SafeAreaTop_Height  [SSDeviceDefault shareCKDeviceDefault].safeAreaTopHeight
+//安全区域底部（iPhone X有）
+#define SafeAreaBottom_Height  [SSDeviceDefault shareCKDeviceDefault].safeAreaBottomHeight
+//标签栏
+#define TabBar_Height  [SSDeviceDefault shareCKDeviceDefault].tabBarHeight
+//根页面主视图部分的高度
+#define MainViewRoot_Height (SCREEN_Height - SafeAreaTop_Height - TabBar_Height - SafeAreaBottom_Height)
+//子页面主视图部分的高度
+#define MainViewSub_Height (SCREEN_Height - SafeAreaTop_Height -  SafeAreaBottom_Height)
 
 
 //判断版本

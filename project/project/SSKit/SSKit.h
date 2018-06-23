@@ -15,6 +15,7 @@
 #import "SSQuartzView.h"
 #import "SSRequest.h"
 #import "SSUserDefault.h"
+#import "SSDeviceDefault.h"
 
 #import "NSDate+Utils.h"
 #import "NSObject+SSProperty.h"

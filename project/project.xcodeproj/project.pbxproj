@@ -48,11 +48,14 @@
 		AF08B2A51E8BEEC1009BE79F /* hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF08B2A11E8BEEC1009BE79F /* hit.wav */; };
 		AF08B2A61E8BEEC1009BE79F /* MLTableAlertBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = AF08B2A21E8BEEC1009BE79F /* MLTableAlertBackground.png */; };
 		AF08B2A71E8BEEC1009BE79F /* move.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF08B2A31E8BEEC1009BE79F /* move.wav */; };
+		AF48C9CF1E8EAA44007FA281 /* default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = AF48C9CE1E8EAA44007FA281 /* default-568h.png */; };
+		AF48C9D11E8EAC6F007FA281 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF48C9D01E8EAC6F007FA281 /* Images.xcassets */; };
 		AF79B0111E8A8A44002B4982 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF79B0101E8A8A44002B4982 /* main.m */; };
 		AF79B0141E8A8A44002B4982 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF79B0131E8A8A44002B4982 /* AppDelegate.m */; };
 		AF79B01C1E8A8A44002B4982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF79B01B1E8A8A44002B4982 /* Assets.xcassets */; };
 		AF79B02A1E8A8A45002B4982 /* projectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF79B0291E8A8A45002B4982 /* projectTests.m */; };
 		AF79B0351E8A8A45002B4982 /* projectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF79B0341E8A8A45002B4982 /* projectUITests.m */; };
+		AFE8264720DE5524001F2EC0 /* SSDeviceDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE8264620DE5524001F2EC0 /* SSDeviceDefault.m */; };
 		C194C81D667776572A8B0B02 /* Pods_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC1A0EFC7B737FCEB81E618 /* Pods_project.framework */; };
 /* End PBXBuildFile section */
 
@@ -156,6 +159,8 @@
 		AF08B2A11E8BEEC1009BE79F /* hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hit.wav; sourceTree = "<group>"; };
 		AF08B2A21E8BEEC1009BE79F /* MLTableAlertBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLTableAlertBackground.png; sourceTree = "<group>"; };
 		AF08B2A31E8BEEC1009BE79F /* move.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = move.wav; sourceTree = "<group>"; };
+		AF48C9CE1E8EAA44007FA281 /* default-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-568h.png"; sourceTree = "<group>"; };
+		AF48C9D01E8EAC6F007FA281 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AF79B00C1E8A8A44002B4982 /* project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF79B0101E8A8A44002B4982 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF79B0121E8A8A44002B4982 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -168,6 +173,8 @@
 		AF79B0301E8A8A45002B4982 /* projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF79B0341E8A8A45002B4982 /* projectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = projectUITests.m; sourceTree = "<group>"; };
 		AF79B0361E8A8A45002B4982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE8264520DE5524001F2EC0 /* SSDeviceDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDeviceDefault.h; sourceTree = "<group>"; };
+		AFE8264620DE5524001F2EC0 /* SSDeviceDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDeviceDefault.m; sourceTree = "<group>"; };
 		F3148664570DB2D24B55184D /* Pods-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project/Pods-project.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -276,6 +283,8 @@
 		AF08B2431E8B8CBC009BE79F /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				AFE8264520DE5524001F2EC0 /* SSDeviceDefault.h */,
+				AFE8264620DE5524001F2EC0 /* SSDeviceDefault.m */,
 				AF08B2441E8B8CBC009BE79F /* BaseController.h */,
 				AF08B2451E8B8CBC009BE79F /* BaseController.m */,
 				AF08B2461E8B8CBC009BE79F /* BaseModel.h */,
@@ -379,6 +388,7 @@
 		AF08B29F1E8BEEC1009BE79F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				AF48C9CE1E8EAA44007FA281 /* default-568h.png */,
 				AF08B2A01E8BEEC1009BE79F /* dis.wav */,
 				AF08B2A11E8BEEC1009BE79F /* hit.wav */,
 				AF08B2A21E8BEEC1009BE79F /* MLTableAlertBackground.png */,
@@ -420,6 +430,7 @@
 				AF08B2741E8B8D6A009BE79F /* SSProject.pch */,
 				AF79B01B1E8A8A44002B4982 /* Assets.xcassets */,
 				AF79B0201E8A8A45002B4982 /* Info.plist */,
+				AF48C9D01E8EAC6F007FA281 /* Images.xcassets */,
 				AF79B00F1E8A8A44002B4982 /* Supporting Files */,
 			);
 			path = project;
@@ -521,7 +532,7 @@
 				TargetAttributes = {
 					AF79B00B1E8A8A44002B4982 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 438Z9XBWVR;
+						DevelopmentTeam = PQSJ28CZ2Q;
 						ProvisioningStyle = Automatic;
 					};
 					AF79B0241E8A8A45002B4982 = {
@@ -563,6 +574,8 @@
 			files = (
 				AF79B01C1E8A8A44002B4982 /* Assets.xcassets in Resources */,
 				AF08B2A61E8BEEC1009BE79F /* MLTableAlertBackground.png in Resources */,
+				AF48C9D11E8EAC6F007FA281 /* Images.xcassets in Resources */,
+				AF48C9CF1E8EAA44007FA281 /* default-568h.png in Resources */,
 				AF08B2A71E8BEEC1009BE79F /* move.wav in Resources */,
 				AF08B2A51E8BEEC1009BE79F /* hit.wav in Resources */,
 				AF08B2A41E8BEEC1009BE79F /* dis.wav in Resources */,
@@ -660,6 +673,7 @@
 				AF08B26C1E8B8CBC009BE79F /* BaseModel.m in Sources */,
 				AF08B2641E8B8CBC009BE79F /* UIControl+SSAdd.m in Sources */,
 				AF08B2701E8B8CBC009BE79F /* SSRequest.m in Sources */,
+				AFE8264720DE5524001F2EC0 /* SSDeviceDefault.m in Sources */,
 				AF08B26A1E8B8CBC009BE79F /* UIViewController+SSAdd.m in Sources */,
 				AF08B2711E8B8CBC009BE79F /* VerificationCodeV.m in Sources */,
 				AF79B0111E8A8A44002B4982 /* main.m in Sources */,
@@ -807,13 +821,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 438Z9XBWVR;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PQSJ28CZ2Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = project/SSProject.pch;
 				INFOPLIST_FILE = project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = soldoros.project;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chengsheng.2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -823,13 +842,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 438Z9XBWVR;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PQSJ28CZ2Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = project/SSProject.pch;
 				INFOPLIST_FILE = project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = soldoros.project;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chengsheng.2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

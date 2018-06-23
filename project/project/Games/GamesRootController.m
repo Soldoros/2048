@@ -1,10 +1,10 @@
 //
 //  GamesRootController.m
 //  project
-//
+
 //  Created by soldoros on 2017/3/29.
 //  Copyright © 2017年 soldoros. All rights reserved.
-//
+
 
 #import "GamesRootController.h"
 
@@ -53,7 +53,7 @@
     NSInteger distence = SCREEN_Width==320?20:(SCREEN_Width==375?25:30);
     
     //设置游戏主题
-    UILabel *title = [[UILabel alloc]initWithFrame:makeRect(25, 35, 120, 50)];
+    UILabel *title = [[UILabel alloc]initWithFrame:makeRect(25, 15+StatuBar_Height, 120, 50)];
     title.text = @"#2048";
     title.font = [UIFont systemFontOfSize:35];
     title.textColor = [UIColor whiteColor];
@@ -67,7 +67,7 @@
     for(int i=0;i<2;++i)
     {
         //承载视图
-        bringView[i] = [[UIView alloc]initWithFrame:makeRect(155+i*80, 35, 70, 50)];
+        bringView[i] = [[UIView alloc]initWithFrame:makeRect(155+i*80, 15+StatuBar_Height, 70, 50)];
         bringView[i].backgroundColor = SCORECOLOR;
         bringView[i].layer.cornerRadius = 5;
         [self.view addSubview:bringView[i]];
@@ -135,7 +135,7 @@
         
         UIButton *playPauseBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         playPauseBtn.bounds = makeRect(0,0, BTN_SIZE, BTN_SIZE);
-        playPauseBtn.top = _colorZone.bottom+distence;
+        playPauseBtn.top = _colorZone.bottom + 25;
         playPauseBtn.tag = 10+i;
         playPauseBtn.backgroundColor = SCORECOLOR;
         playPauseBtn.layer.cornerRadius = BTN_SIZE/2;
@@ -164,7 +164,7 @@
     }
     
     
-    UILabel *soldoros = [[UILabel alloc]initWithFrame:makeRect(10, SCREEN_Height-40, SCREEN_Width-20, 40)];
+    UILabel *soldoros = [[UILabel alloc]initWithFrame:makeRect(10, SCREEN_Height-40-SafeAreaBottom_Height, SCREEN_Width-20, 40)];
     soldoros.text = @"    我希望有一盏灯，有魔力的灯，探清前方的桥，照亮世间的路；我希望有一盏灯，有魔力的灯，让我看清楚自己，让我看清楚未来。欢迎来到魔灯2048！       soldoros";
     soldoros.numberOfLines = 2;
     soldoros.font = [UIFont systemFontOfSize:8];
